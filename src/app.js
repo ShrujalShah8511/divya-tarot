@@ -183,8 +183,8 @@ class DivyaTarotApp {
           <p class="footer-text">
             <span class="text-gold-gradient" style="font-weight: 700;">Divya Tarot</span> • Authentic Indian Vedic Karma & Tarot Readings
           </p>
-          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.4rem;">
-            Crafted for India with ❤️ and developed & maintained by <strong style="color: var(--text-main);">Shrujal Shah</strong> (<a href="mailto:shah.shrujal28@gmail.com" style="color: var(--text-gold); text-decoration: underline;">shah.shrujal28@gmail.com</a>)
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.4rem;">
+            Crafted for India with love <span style="color: #ff4757; font-size: 1.1rem; vertical-align: middle;">&hearts;</span> and developed & maintained by <strong style="color: var(--text-main);">Shrujal Shah</strong> (<a href="mailto:shah.shrujal28@gmail.com" style="color: var(--text-gold); text-decoration: underline;">shah.shrujal28@gmail.com</a>)
           </p>
         </div>
       </footer>
