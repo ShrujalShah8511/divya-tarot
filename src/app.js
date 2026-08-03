@@ -1,5 +1,5 @@
 // ==========================================================================
-// DIVYA TAROT MAIN APPLICATION ORCHESTRATOR (Clean & Cleaned Up)
+// DIVYA TAROT MAIN APPLICATION ORCHESTRATOR
 // ==========================================================================
 
 import { MandalaCanvas } from './components/MandalaCanvas.js';
@@ -17,7 +17,7 @@ import { soundFx } from './utils/soundEffects.js';
 class DivyaTarotApp {
   constructor() {
     this.state = {
-      selectedSpreadId: 'karma',
+      selectedSpreadId: TAROT_SPREADS[0]?.id || 'shubh',
       userQuestion: '',
       drawnCards: [],
       isDrawerOpen: false,
@@ -206,6 +206,7 @@ class DivyaTarotApp {
       onReset: () => {
         this.state.drawnCards = [];
         this.state.userQuestion = '';
+        this.state.selectedSpreadId = TAROT_SPREADS[0].id;
         this.render();
       }
     });
