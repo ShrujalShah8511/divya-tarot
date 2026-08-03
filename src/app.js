@@ -1,5 +1,5 @@
 // ==========================================================================
-// DIVYA TAROT MAIN APPLICATION ORCHESTRATOR
+// DIVYA TAROT MAIN APPLICATION ORCHESTRATOR (Clean & Cleaned Up)
 // ==========================================================================
 
 import { MandalaCanvas } from './components/MandalaCanvas.js';
@@ -23,7 +23,6 @@ class DivyaTarotApp {
       isDrawerOpen: false,
       isJournalOpen: false,
       isReadingSaved: false,
-      currentTheme: localStorage.getItem('divya_tarot_theme') || 'cyber-violet',
       savedReadings: this.loadJournalFromStorage()
     };
 
@@ -31,9 +30,6 @@ class DivyaTarotApp {
   }
 
   init() {
-    // Apply current color theme
-    document.documentElement.setAttribute('data-theme', this.state.currentTheme);
-
     // Initialize sacred background canvas
     window.addEventListener('DOMContentLoaded', () => {
       new MandalaCanvas('mandala-canvas');
@@ -58,13 +54,6 @@ class DivyaTarotApp {
     } catch (e) {
       console.warn('LocalStorage save error:', e);
     }
-  }
-
-  setTheme(themeId) {
-    this.state.currentTheme = themeId;
-    localStorage.setItem('divya_tarot_theme', themeId);
-    document.documentElement.setAttribute('data-theme', themeId);
-    this.render();
   }
 
   // Shuffle and Deal Tarot Cards
@@ -148,8 +137,7 @@ class DivyaTarotApp {
 
     appContainer.innerHTML = `
       ${renderNavbar({
-        onOpenJournal: () => { this.state.isJournalOpen = true; this.render(); },
-        currentTheme: this.state.currentTheme
+        onOpenJournal: () => { this.state.isJournalOpen = true; this.render(); }
       })}
 
       <main style="flex: 1;">
@@ -197,8 +185,7 @@ class DivyaTarotApp {
 
     // Attach Event Listeners
     setupNavbarEvents({
-      onOpenJournal: () => { this.state.isJournalOpen = true; this.render(); },
-      onThemeChange: (themeId) => this.setTheme(themeId)
+      onOpenJournal: () => { this.state.isJournalOpen = true; this.render(); }
     });
 
     setupSpreadSelectorEvents({
