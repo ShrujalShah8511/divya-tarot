@@ -1,11 +1,8 @@
 /* ==========================================================================
-   DIVYA TAROT - Master Design System, Grid Alignment & Full Color Themes
+   DIVYA TAROT - Master Design System & Clean Theme Styles
    ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   THEME 1: Cyber Violet & Celestial Gold (Default)
-   -------------------------------------------------------------------------- */
-:root, [data-theme="cyber-violet"] {
+:root {
   --bg-deep: #070917;
   --bg-surface: #0e112a;
   --bg-surface-elevated: #161b3d;
@@ -30,99 +27,7 @@
   --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.35);
   --shadow-accent: 0 0 30px rgba(139, 92, 246, 0.4);
   --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.7);
-}
 
-/* --------------------------------------------------------------------------
-   THEME 2: Vedic Emerald & Mint
-   -------------------------------------------------------------------------- */
-[data-theme="vedic-emerald"] {
-  --bg-deep: #031410;
-  --bg-surface: #08261e;
-  --bg-surface-elevated: #0e3d30;
-  --glass-bg: rgba(8, 38, 30, 0.78);
-  --glass-border: rgba(16, 185, 129, 0.3);
-  --glass-border-hover: rgba(52, 211, 153, 0.7);
-
-  --accent-primary: #10b981;
-  --accent-glow: #34d399;
-  --gold-primary: #f59e0b;
-  --gold-bright: #fbbf24;
-  --gold-light: #fef08a;
-
-  --gold-gradient: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
-  --accent-gradient: linear-gradient(135deg, #6ee7b7 0%, #10b981 50%, #047857 100%);
-  --gradient-hero: linear-gradient(135deg, #fbbf24 0%, #34d399 45%, #10b981 85%);
-
-  --text-main: #f0fdf4;
-  --text-muted: #94a3b8;
-  --text-gold: #fde047;
-
-  --shadow-gold: 0 0 25px rgba(16, 185, 129, 0.35);
-  --shadow-accent: 0 0 30px rgba(52, 211, 153, 0.4);
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.75);
-}
-
-/* --------------------------------------------------------------------------
-   THEME 3: Cosmic Sapphire & Cyan
-   -------------------------------------------------------------------------- */
-[data-theme="starlight-sapphire"] {
-  --bg-deep: #020617;
-  --bg-surface: #0f172a;
-  --bg-surface-elevated: #1e293b;
-  --glass-bg: rgba(15, 23, 42, 0.78);
-  --glass-border: rgba(6, 182, 212, 0.3);
-  --glass-border-hover: rgba(56, 189, 248, 0.7);
-
-  --accent-primary: #06b6d4;
-  --accent-glow: #38bdf8;
-  --gold-primary: #38bdf8;
-  --gold-bright: #7dd3fc;
-  --gold-light: #e0f2fe;
-
-  --gold-gradient: linear-gradient(135deg, #38bdf8 0%, #0284c7 50%, #0369a1 100%);
-  --accent-gradient: linear-gradient(135deg, #22d3ee 0%, #3b82f6 50%, #6366f1 100%);
-  --gradient-hero: linear-gradient(135deg, #38bdf8 0%, #818cf8 45%, #c084fc 85%);
-
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-gold: #7dd3fc;
-
-  --shadow-gold: 0 0 25px rgba(6, 182, 212, 0.35);
-  --shadow-accent: 0 0 30px rgba(56, 189, 248, 0.4);
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.8);
-}
-
-/* --------------------------------------------------------------------------
-   THEME 4: Obsidian Amber & Rose
-   -------------------------------------------------------------------------- */
-[data-theme="obsidian-amber"] {
-  --bg-deep: #090807;
-  --bg-surface: #1c1917;
-  --bg-surface-elevated: #292524;
-  --glass-bg: rgba(28, 25, 23, 0.78);
-  --glass-border: rgba(245, 158, 11, 0.3);
-  --glass-border-hover: rgba(251, 191, 36, 0.7);
-
-  --accent-primary: #f59e0b;
-  --accent-glow: #fbbf24;
-  --gold-primary: #fbbf24;
-  --gold-bright: #fef08a;
-  --gold-light: #fffbeb;
-
-  --gold-gradient: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #ea580c 100%);
-  --accent-gradient: linear-gradient(135deg, #fb7185 0%, #e11d48 50%, #be123c 100%);
-  --gradient-hero: linear-gradient(135deg, #fef08a 0%, #f59e0b 45%, #f43f5e 85%);
-
-  --text-main: #fafaf9;
-  --text-muted: #a8a29e;
-  --text-gold: #fef08a;
-
-  --shadow-gold: 0 0 25px rgba(245, 158, 11, 0.35);
-  --shadow-accent: 0 0 30px rgba(251, 191, 36, 0.4);
-  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.85);
-}
-
-:root {
   --font-heading: 'Outfit', 'Cinzel', serif;
   --font-serif: 'Cinzel', serif;
   --font-reading: 'Cormorant Garamond', serif;
@@ -153,7 +58,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -187,7 +91,7 @@ h1, h2, h3, h4, .font-heading {
   -webkit-text-fill-color: transparent;
 }
 
-/* Container Grid Alignment */
+/* Container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -323,65 +227,6 @@ h1, h2, h3, h4, .font-heading {
   gap: 0.75rem;
 }
 
-/* Modern Theme Selector */
-.theme-selector-wrapper {
-  position: relative;
-}
-
-.theme-dropdown {
-  position: absolute;
-  top: calc(100% + 0.6rem);
-  right: 0;
-  width: 220px;
-  padding: 0.6rem;
-  z-index: 200;
-  border-radius: var(--radius-md);
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.theme-dropdown.hidden {
-  display: none;
-}
-
-.theme-dropdown-header {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  padding: 0.4rem 0.6rem 0.2rem 0.6rem;
-}
-
-.theme-option {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.55rem 0.8rem;
-  border-radius: var(--radius-sm);
-  background: transparent;
-  border: none;
-  color: var(--text-main);
-  font-family: var(--font-sans);
-  font-size: 0.88rem;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  text-align: left;
-}
-
-.theme-option:hover, .theme-option.active {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-.theme-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  box-shadow: 0 0 8px currentColor;
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -414,7 +259,7 @@ h1, h2, h3, h4, .font-heading {
   font-size: 1.05rem;
 }
 
-/* Spreads Grid Layout Alignment */
+/* Spreads Grid Layout */
 .spreads-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -454,7 +299,6 @@ h1, h2, h3, h4, .font-heading {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
-
 }
 
 .spread-cards-count {
@@ -503,7 +347,7 @@ h1, h2, h3, h4, .font-heading {
   border-color: var(--gold-bright);
 }
 
-/* Reading Arena Grid Alignment */
+/* Reading Arena Layout */
 .reading-arena {
   margin: 2.5rem auto;
   padding: 2.5rem;
@@ -538,7 +382,7 @@ h1, h2, h3, h4, .font-heading {
   text-align: center;
 }
 
-/* Tarot Card 3D Flip Layout */
+/* Tarot Card 3D Flip */
 .tarot-card-wrapper {
   width: 195px;
   height: 315px;
@@ -730,7 +574,6 @@ h1, h2, h3, h4, .font-heading {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-
   margin-bottom: 2rem;
 }
 
