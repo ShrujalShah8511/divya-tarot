@@ -17,7 +17,7 @@ export function renderNavbar({ onOpenJournal }) {
           <div>
             <div style="display: flex; align-items: center; gap: 0.5rem;">
               <span class="brand-title text-gold-gradient">Divya Tarot</span>
-              <span class="brand-badge">Made for India 🇮🇳</span>
+              <span class="brand-badge">Vedic Guidance 2.0</span>
             </div>
             <div style="font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-reading);">Vedic Karma & Tarot Guidance</div>
           </div>
